@@ -96,9 +96,51 @@ class HomeController extends Controller
      {
      $data->user_id= Auth::user()->id;
      }
-     
+
      $data->save();
      $doctor = Doctor::all();
-     return View('auth.user.user',compact('doctor'));
+
+
+     //Still dont show message but send the details
+
+   return View('auth.user.user')->with(['doctor' => $doctor, 'message'
+    => 'Appointment request submitted successfully! Soon We will contact with you' ]);
+
+    }
+
+// Request appointment
+    public function myappoint()
+    {
+
+        if(Auth::id())
+        {
+            $userid = Auth::user()->id;
+            $appoint = Appointment::where('user_id',$userid)->get();
+           return View('auth.user.myappointment',compact('appoint'));
+        }
+        else
+        {
+            return redirect()->back();
+        }
+      
+    }
+
+    //Cancel appointment
+    public function cancel_appointment($id)
+    {
+        $data = Appointment::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
+
+    public function forgot()
+    {
+         return View('auth.forgot-password');
+    }
+
+    //Confirm password
+    public function confirm()
+    {
+        return redirect()->back();
     }
 }

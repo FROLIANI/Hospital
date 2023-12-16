@@ -59,9 +59,6 @@
     </li>
 
 
-
-    
-
     <li class="nav-item menu-items">
       <a class="nav-link" href="{{url('add_doctor_view')}}">
         <span class="menu-icon">
@@ -70,5 +67,25 @@
         <span class="menu-title">Add Doctors</span>
       </a>
     </li>
+
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="{{url('show_appointments')}}">
+        <span class="menu-icon">
+          <i class="mdi mdi-file-document-box"></i>
+        </span>
+        <span class="menu-title">Appointments</span>
+      </a>
+    </li>
+
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="{{url('showdoctor')}}">
+        <span class="menu-icon">
+          <i class="mdi mdi-file-document-box"></i>
+        </span>
+        <span class="menu-title">All Doctors</span>
+      </a>
+    </li>
+
+
   </ul>
 </nav>

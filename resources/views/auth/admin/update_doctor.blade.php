@@ -2,11 +2,16 @@
 <html lang="en">
   <head>
 
+    <base href="/public">
+
     <style type="text/css">
-       label{
+    
+    label
+    {
         display: inline-block;
-        width: 210px;
-       }
+        width: 200px;
+    }
+
     </style>
    
     @include('auth.admin.css')
@@ -36,68 +41,59 @@
 
      @include('auth.admin.navbar')
 
-     <div class="container-fluid page-body-wrapper d-flex justify-content-center align-items-center >
+     
+     <div class="container-fluid page-body-wrapper d-flex justify-content-center" style="padding-top: 80px"  >
      
         <div class="container">
 
           @if(session()->has('message'))
-          <div class ="alert primary-sucess">
-            <button type="button" class="close" data-dismiss="alert">x</button>
-    
-            {{session()->get('message')}}
-  
-          </div>
-          @endif
+  <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert">x</button>
+      {{ session()->get('message') }}
+  </div>
+ @endif
 
+            <form action="{{url('editdoctor',$data->id)}}" method="POST" enctype="multipart/form-data">
 
-            <form action="{{url('upload_doctor')}}" method="GET" enctype="multipart/form-data">
+               @csrf
+               <div style="padding: 15px">
+                <h4 style="color: black">Update the Details</h4>
+               </div>
 
-                @csrf
-               
                 <div style="padding: 15px">
                     <label>Doctor Name</label>
-                    <input type="text" name="name" style="color: black" placeholder="Write the name" required>
+                    <input type="text" name="name" value="{{$data->name}}" style="color: black">
                 </div>
 
                 
                 <div style="padding: 15px">
                     <label>Phone</label>
-                    <input type="number" name="phone" style="color: black" placeholder="Write the phone number" required>
+                    <input type="number" name="phone" value="{{$data->phone}}" style="color: black">
                 </div>
 
                 
                 <div style="padding: 15px">
                     <label>Room No</label>
-                    <input type="text" name="room" style="color: black" placeholder="Write the  room" required>
-                </div>
-
-                
-                <div style="padding: 15px">
-                    <label>Speciality</label>
-                    <select name="specility" style="color: black; width: 245px; height: 35px" required>
-                        <option disabled selected >--Select--</option>
-                        <option value="skin">skin</option>
-                        <option value="heart">heart</option>
-                        <option value="eye">eye</option>
-                        <option value="nose">nose</option>
-                    </select>
-
-
-                <div style="padding: 15px">
-                    <label>Doctor Image</label>
-                    <input type="file" name="image" id="image" required>
+                    <input type="text" name="room" value="{{$data->room}}" style="color: black" >
                 </div>
 
                 <div style="padding: 15px">
-                    <input type="submit" class="btn btn-success" name="submit">
+                    <label>Specilaity</label>
+                    <input type="text" name="specility" value="{{$data->specility}}" style="color: black" >
+                </div>
+
+
+                <div style="padding: 15px">
+                    <input type="Submit" class="btn btn-success">
                 </div>
 
             </form>
         </div>
     </div>
-    
 
 
+
+        
         </div>
         <!-- main-panel ends -->
       </div>

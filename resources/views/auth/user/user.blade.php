@@ -9,7 +9,7 @@
   <!-- Back to top button -->
   <div class="back-to-top"></div>
 
- @include('auth.user.userheader')
+ @include('auth.user.userheader')  
 
 
  @include('auth.user.middle')
@@ -19,6 +19,7 @@
 @include('auth.doctor')
 
 @include('auth.latest')
+
 
   @include('auth.appointment')
 

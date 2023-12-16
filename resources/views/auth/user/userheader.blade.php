@@ -1,12 +1,13 @@
 <header>
     <div class="topbar">
       <div class="container">
+ 
         <div class="row">
           <div class="col-sm-8 text-sm">
             <div class="site-info">
               <a href="#"><span class="mai-call text-primary"></span> +255 7186584 50</a>
               <span class="divider">|</span>
-              <a href="#"><span class="mai-mail text-primary"></span> froliernest98@example.com</a>
+              <a href="#"><span class="mai-mail text-primary"></span> froliernest98@gmail.com.com</a>
             </div>
           </div>
           <div class="col-sm-4 text-right text-sm">
@@ -57,6 +58,9 @@
             </li>
 
             <!----------------check user login -->
+            <li class="nav-item">
+                <a class="btn btn-primary ml-lg-3" href="{{url('myappointment')}}">My Appointment </a>
+              </li
            
             <li class="nav-item">
               <a class="btn btn-primary ml-lg-3" href="#">User </a>
@@ -67,3 +71,6 @@
       </div> <!-- .container -->
     </nav>
   </header>
+
+ 
+ 

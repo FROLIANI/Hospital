@@ -3,7 +3,7 @@
      This is laravel project that concern for the customer to make appointment  to the doctor. The doctor receive the appointment of the customer
      and can decide to approve the request or reject. Also the admin incharge can add doctors based on the specialization like either heart, nose or any other specialization
      Homepage View
-     ![homeview](https://github.com/FROLIANI/Hospital/assets/84269100/8ec27d9c-5295-440a-8c42-9130ac8ab4af)
+     [homeview](https://github.com/FROLIANI/Hospital/assets/84269100/8ec27d9c-5295-440a-8c42-9130ac8ab4af)
 
      Make appointment
      ![makeappointment](https://github.com/FROLIANI/Hospital/assets/84269100/d5fb642d-926b-4173-a39a-6faf02a4d91f)

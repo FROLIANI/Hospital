@@ -14,7 +14,7 @@
           </div>
           <div class="profile-name">
             <h5 class="mb-0 font-weight-normal">Frolian Ernest</h5>
-            <span>Gold Member</span>
+            <span>Admin Incharge</span>
           </div>
         </div>
         <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
@@ -48,14 +48,14 @@
               </div>
             </div>
             <div class="preview-item-content">
-              <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+              <p class="preview-subject ellipsis mb-1 text-small">Themes</p>
             </div>
           </a>
         </div>
       </div>
     </li>
     <li class="nav-item nav-category">
-      <span class="nav-link">Navigation</span>
+      <span class="nav-link">Category</span>
     </li>
 
 
@@ -85,6 +85,25 @@
         <span class="menu-title">All Doctors</span>
       </a>
     </li>
+
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="{{url('received')}}">
+        <span class="menu-icon">
+          <i class="mdi mdi-file-document-box"></i>
+        </span>
+        <span class="menu-title">Message</span>
+      </a>
+    </li>
+
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="{{url('getcomment')}}">
+        <span class="menu-icon">
+          <i class="mdi mdi-file-document-box"></i>
+        </span>
+        <span class="menu-title">Comment</span>
+      </a>
+    </li>
+
 
 
   </ul>

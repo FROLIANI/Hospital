@@ -7,27 +7,19 @@
 <body>
 
   <!-- Back to top button -->
-  <div class="back-to-top"></div>
+  <div class="back-to-top" style="padding: 30px"></div>
 
+  <div style="padding-bottom: 40px">
  @include('auth.user.header')
-
+</div>
 
 
  <div class="container">
 
 
- @include('auth.user.middle')
-
 @include('auth.user.body')
-  
-@include('auth.doctor')
 
-@include('auth.latest')
-
-  @include('auth.appointment')
-
-
-  @include('auth.user.footer')
+@include('auth.user.footer')
 
 
    @include('auth.user.script')

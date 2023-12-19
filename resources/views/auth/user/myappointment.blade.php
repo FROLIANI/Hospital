@@ -13,6 +13,8 @@
 
     @include('auth.user.userheader')
 
+    @include('auth.user.userbody')
+
     <div class="d-flex justify-content-center align-items-center" style="padding: 70px">
         <table>
             <tr style="background-color: black">

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\Appointment;
+use App\Models\comment;
 use App\Models\Doctor;
+use App\Models\leavmessage;
 use Illuminate\Http\Request;
 
 
@@ -103,5 +105,30 @@ class AdminController extends Controller
        $doctor->save();
 
        return redirect()->back()->with('message','Doctor Updated successfully');
+    }
+
+    //received message
+    public function received()
+    {
+        $receivedata = leavmessage::all();
+
+        return View('auth.admin.messagereceived', compact('receivedata'));
+
+    }
+
+    //get the comment from the customer
+    public function getcomment()
+    {
+        $receivecomment = comment::all();
+        return view('auth.admin.getcomment', compact('receivecomment'));
+
+    }
+
+    //Delete comment
+    public function deletecomment($id)
+    {
+        $deletedata = Comment::find($id);
+        $deletedata->delete();
+        return redirect()->back();
     }
 }

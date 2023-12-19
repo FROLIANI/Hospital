@@ -36,8 +36,16 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h1>Welcome to Your Health <br> Center</h1>
-            <p class="text-grey mb-4">Our centre is courage to provide essentials services that is important.Welcome All</p>
-            <a href="about.html" class="btn btn-primary">Learn More</a>
+            <p class="text-grey mb-4">Our centre is courage to provide essentials services that is important.<br>We have profesional
+            staff in every category that can provide health treatment in efficiently. We have simplified where our patiennts can make an appointment 
+            with doctors so that they can the services as immediately</p>
+            
+            <div>
+              <h5 class="text-grey mb-4">Dr.Roby Ernest</h5>
+            </div>
+            <div>
+              <h6 class="text-grey ">Inc-Centre Incharge</h6>
+            </div>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
             <div class="img-place custom-img-1"> 

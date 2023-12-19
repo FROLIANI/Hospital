@@ -12,10 +12,12 @@
           </div>
           <div class="col-sm-4 text-right text-sm">
             <div class="social-mini-button">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
+              <a href="https://www.facebook.com/frolian.ernest.3/"><span class="mai-logo-facebook-f"></span></a>
+              <a href="https://twitter.com/ErnestFrolian"><span class="mai-logo-twitter"></span></a>
+              <a href="https://whatsapp.com"><span class="mai-logo-whatsapp"></span></a>
+              <a href="https://www.instagram.com/incfrol98expert/"><span class="mai-logo-instagram"></span></a>
+              <a href="https://www.linkedin.com/in/frolian-ernest-9b0674246/"><span class="mai-logo-linkedin"></span></a>
+
             </div>
           </div>
         </div> <!-- .row -->
@@ -31,7 +33,7 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
             </div>
-            <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
+            <input type="text" class="form-control" placeholder="Enter keyword" aria-label="Username" aria-describedby="icon-addon1">
           </div>
         </form>
 
@@ -42,20 +44,22 @@
         <div class="collapse navbar-collapse" id="navbarSupport">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="{{url('/')}}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="{{url('about')}}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="{{url('sitedoctor')}}">Doctors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">News</a>
+              <a class="nav-link" href="{{url('news')}}">News</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{url('contact')}}">Contact</a>
             </li>
+
 
             <!----------------check user login -->
             <li class="nav-item">

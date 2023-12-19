@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Doctor;
 use App\Models\User;
 use App\Models\Appointment;
+use App\Models\comment;
+use App\Models\leavmessage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -44,7 +46,7 @@ class HomeController extends Controller
 
         //Save the user data and direct user to the login
         $user->save();
-        return redirect('login');
+        return redirect()->back()->with('message','Registered Successfully!. Go back to login');
     }
 
     public function login_user(Request $request)
@@ -143,4 +145,80 @@ class HomeController extends Controller
     {
         return redirect()->back();
     }
+
+    //function to leave message
+    public function contact(Request $request)
+    {
+        $send  = new leavmessage();
+
+        $send ->name = $request->name;
+
+        $send ->email = $request->email;
+
+        $send ->phone = $request->phone;
+
+        $send ->subject = $request->subject;
+
+        $send ->message = $request->message;
+
+        $send->save();
+        $doctor = Doctor::all();
+        
+        
+        return View('auth.user.contact')->with(['doctor' => $doctor, 'message'
+    => 'Appointment request submitted successfully! Soon We will contact with you' ]);
+
+      
+    }
+    
+    //Read more
+    public function blog()
+    {
+        return View('auth.user.blog');
+    }
+
+    //Add comment
+    public function addcomment(Request $request)
+    {
+        $addcoment  = new comment();
+
+        $addcoment ->name = $request->name;
+
+        $addcoment ->email = $request->email;
+
+        $addcoment ->phone = $request->phone;
+
+        $addcoment ->category = $request->category;
+
+        $addcoment ->message = $request->message;
+
+        $addcoment ->save();
+       
+        return redirect()->back()->with('message','Comment added successfully!');
+    }
+
+
+    //side bar
+    public function about()
+    {
+        return View('auth.user.about');
+    }
+
+    public function sitedoctor()
+    {
+        return View('auth.user.sitedoctor');
+    }
+
+    public function news()
+    {
+        return View('auth.user.news');
+    }
+
+    public function appointment()
+    {
+        $doctor = Doctor::all();
+        return View('auth.user.appointment', compact('doctor'));
+    }
+
+
 }

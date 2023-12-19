@@ -70,10 +70,37 @@ Route::get('/forgot', [HomeController::class, 'forgot']);
 //Confirm password
 Route::post('/confirm', [HomeController::class, 'confirm']);
 
+//Contact for leave message
+Route::POST('/message', [HomeController::class, 'message']);
+
+//Delete comment
+Route::get('/deletecomment/{id}', [AdminController::class, 'deletecomment']);
+
+
+
+//Side bar
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/sitedoctor', [HomeController::class, 'sitedoctor']);
+Route::get('/news', [HomeController::class, 'news']);
+Route::get('/appointment', [HomeController::class, 'appointment']);
+Route::get('/contact', [HomeController::class, 'contact']);
+
+//message contacted
+Route::get('/received', [AdminController::class, 'received']);
 
 //Register user and fetch the data
 Route::post('/login_user', [HomeController::class, 'login_user']);
 Route::post('/register_user', [HomeController::class, 'register_user']);
+
+//Read more
+Route::get('/blog', [HomeController::class, 'blog']);
+
+//Add comment
+Route::post('/addcomment', [HomeController::class, 'addcomment']);
+
+//Admin get comment
+Route::get('/getcomment', [AdminController::class, 'getcomment']);
+
 
 Route::middleware([
     'auth:sanctum',

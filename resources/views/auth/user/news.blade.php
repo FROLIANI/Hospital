@@ -12,19 +12,10 @@
  @include('auth.user.header')
 
 
-
  <div class="container">
 
 
- @include('auth.user.middle')
-
-@include('auth.user.body')
-  
-@include('auth.doctor')
-
 @include('auth.latest')
-
-  @include('auth.appointment')
 
 
   @include('auth.user.footer')

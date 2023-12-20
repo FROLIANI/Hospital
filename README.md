@@ -34,6 +34,10 @@ All Tables For Hospital Appointment
 
 ![tables](https://github.com/FROLIANI/Hospital/assets/84269100/29797fcd-1c0c-4d9e-a11c-d564c33ce5cd)
 
+User Appointment sent either approved or rejected by doctor
+![user appointment](https://github.com/FROLIANI/Hospital/assets/84269100/2c9ae9fc-5b84-438b-ad46-0d95fa5a5a54)
+
+
 
 
 

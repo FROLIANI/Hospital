@@ -45,6 +45,26 @@ Admin incharge dashboard. Have the following task
 5.Receive comment and reply
 ![Admin dashboard](https://github.com/FROLIANI/Hospital/assets/84269100/ef05dc7f-3082-451a-bbb0-ec50e8281b81)
 
+VIEWS
+Add Doctors
+![add doctors](https://github.com/FROLIANI/Hospital/assets/84269100/84734809-939b-4a23-9b14-191aa7c631cd)
+
+Receive Appointment take action
+![revappointment](https://github.com/FROLIANI/Hospital/assets/84269100/b833adb4-8ac1-4251-b058-e35579a23d93)
+
+Manage Doctors
+![mdoctors](https://github.com/FROLIANI/Hospital/assets/84269100/6ce13002-cc01-48c5-976d-b6bab924ce7f)
+
+Receive message
+![recemm](https://github.com/FROLIANI/Hospital/assets/84269100/46f5635b-1b07-4e2e-8f09-c0ae170513c7)
+
+Comment received by Doctors
+![comment](https://github.com/FROLIANI/Hospital/assets/84269100/d55f27a6-8e41-47f6-a0f4-1bb3c9c68f5f)
+
+
+
+
+
 
 
 

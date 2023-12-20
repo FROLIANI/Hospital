@@ -8,7 +8,11 @@ Homepage
 ![homeview](https://github.com/FROLIANI/Hospital/assets/84269100/2c841f0c-63c8-472d-a628-2767308511d0)
 
 Customer make appointment
-![appointmentrecords](https://github.com/FROLIANI/Hospital/assets/84269100/09af0462-fde0-483b-aa50-de9f74808c71)
+![makeappointment](https://github.com/FROLIANI/Hospital/assets/84269100/86949259-b28d-43c8-aef1-d681cf0dd717)
+
+All doctors to make appointment
+![doctorview](https://github.com/FROLIANI/Hospital/assets/84269100/03695fad-0bdc-4a68-8c43-6e69b723fdfe)
+
 
 
  

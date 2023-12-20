@@ -37,6 +37,14 @@ All Tables For Hospital Appointment
 User Appointment sent either approved or rejected by doctor
 ![user appointment](https://github.com/FROLIANI/Hospital/assets/84269100/2c9ae9fc-5b84-438b-ad46-0d95fa5a5a54)
 
+Admin incharge dashboard. Have the following task
+1.Add Doctors
+2. Doctors approve or reject appointment
+3.Manage Doctors( Update or delete)
+4.Receive message and reply
+5.Receive comment and reply
+![Admin dashboard](https://github.com/FROLIANI/Hospital/assets/84269100/ef05dc7f-3082-451a-bbb0-ec50e8281b81)
+
 
 
 
